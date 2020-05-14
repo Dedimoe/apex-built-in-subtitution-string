@@ -61,13 +61,8 @@ APEX$ROW_NUM refers the currently processed row number of a submitted tabular fo
 
 Table 3-3 APEX$ROW_NUM Syntax
 
-No  | Tanggal  | Items | Catatan 
-:---:| :---: | :--- | ---
-1 | 2019-07-16 10:46 | Github | dedimoe
-2 | a | b |    c
-
 Reference Type | Syntax
-:---: | :--:
+:--- | :--
 Bind variable | ```:APEX$ROW_NUM```
 PL/SQL | ```V('APEX$ROW_NUM')```
 Substitution string | ```&APEX$ROW_NUM.```
