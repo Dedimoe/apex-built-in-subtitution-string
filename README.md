@@ -7,54 +7,52 @@ App Builder supports many built-in substitution strings. You can reference these
 Tip: Note that bind variable :USER has special meaning within the database. Also, the term Direct PL/SQL refers to PL/SQL that can be used in stored database objects such as procedures and functions.
 
 
-1.[APEX$ROW_NUM](#1)
-
-APEX$ROW_SELECTOR
-
-APEX$ROW_STATUS
-APP_ID
-APP_ALIAS
-APP_AJAX_X01, ... APP_AJAX_X10
-APP_BUILDER_SESSION
-APP_DATE_TIME_FORMAT
-APP_IMAGES
-APP_NLS_DATE_FORMAT
-APP_NLS_TIMESTAMP_FORMAT
-APP_NLS_TIMESTAMP_TZ_FORMAT
-APP_PAGE_ALIAS
-APP_PAGE_ID
-APP_REGION_ID
-APP_REGION_STATIC_ID
-APP_REQUEST_DATA_HASH
-APP_SESSION
-APP_SESSION_VISIBLE
-APP_TITLE
-APP_UNIQUE_PAGE_ID
-APP_USER
-AUTHENTICATED_URL_PREFIX
-BROWSER_LANGUAGE
-CURRENT_PARENT_TAB_TEXT
-DEBUG
-HOME_LINK
-IMAGE_PREFIX
-JET_BASE_DIRECTORY
-JET_CSS_DIRECTORY
-JET_JS_DIRECTORY
-LOGIN_URL
-LOGOUT_URL
-APP_TEXT$Message_Name, APP_TEXT$Message_Name$Lang
-PRINTER_FRIENDLY
-PROXY_SERVER
-PUBLIC_URL_PREFIX
-REQUEST
-Using REQUEST
-SCHEMA OWNER
-SQLERRM
-SYSDATE_YYYYMMDD
-THEME_DB_IMAGES
-THEME_IMAGES
-WORKSPACE_IMAGES
-WORKSPACE_ID
+1. [APEX$ROW_NUM](#1)
+2. APEX$ROW_SELECTOR](#2)
+3. APEX$ROW_STATUS
+4. APP_ID
+5. APP_ALIAS
+6. APP_AJAX_X01, ... APP_AJAX_X10
+7. APP_BUILDER_SESSION
+8. APP_DATE_TIME_FORMAT
+9. APP_IMAGES
+10. APP_NLS_DATE_FORMAT
+11. APP_NLS_TIMESTAMP_FORMAT
+12. APP_NLS_TIMESTAMP_TZ_FORMAT
+13. APP_PAGE_ALIAS
+14. APP_PAGE_ID
+15. APP_REGION_ID
+16. APP_REGION_STATIC_ID
+17. APP_REQUEST_DATA_HASH
+18. APP_SESSION
+19. APP_SESSION_VISIBLE
+20. APP_TITLE
+21. APP_UNIQUE_PAGE_ID
+22. APP_USER
+23. AUTHENTICATED_URL_PREFIX
+24. BROWSER_LANGUAGE
+25. CURRENT_PARENT_TAB_TEXT
+26. DEBUG
+27. HOME_LINK
+28. IMAGE_PREFIX
+29. JET_BASE_DIRECTORY
+30. JET_CSS_DIRECTORY
+31. JET_JS_DIRECTORY
+32. LOGIN_URL
+33. LOGOUT_URL
+34. APP_TEXT$Message_Name, APP_TEXT$Message_Name$Lang
+35. PRINTER_FRIENDLY
+36. PROXY_SERVER
+37. PUBLIC_URL_PREFIX
+38. REQUEST
+39. Using REQUEST
+40. SCHEMA OWNER
+41. SQLERRM
+42. SYSDATE_YYYYMMDD
+43. THEME_DB_IMAGES
+44. THEME_IMAGES
+45. WORKSPACE_IMAGES
+46. WORKSPACE_ID
 
 <a id="1"></a>
 ### 1 APEX$ROW_NUM
@@ -97,7 +95,8 @@ Substitution string
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.3 APEX$ROW_STATUS
+<a id="3"></a>
+### 3 APEX$ROW_STATUS
 Use APEX$STATUS in validations, processes, and conditions associated with a tabular form to refer to the row status in a tabular form. This placeholder returns the status of C if created, U if updated, or D if deleted for the currently processed tabular form row.
 
 Table 3-5 APEX$ROW_STATUS Syntax
@@ -117,7 +116,8 @@ Substitution string
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.4 APP_ID
+<a id="4"></a>
+### 4 APP_ID
 APP_ID identifies the application ID of the currently executing application.
 
 Table 3-6 APP_ID Syntax
@@ -157,7 +157,8 @@ Oracle Application Express sets up the APEX$SESSION context when it starts to pr
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.5 APP_ALIAS
+<a id="1"></a>
+### 5 APP_ALIAS
 APP_ALIAS is an alphanumeric name for the current application. APP_ALIAS is different from the APP_ID in that the APP_ID must be unique over all workspaces and all applications hosted in one database. In contrast, APP_ALIAS must be unique within a workspace. For example, by using the same APP_ALIAS you can create the application, ABC, in two different workspaces. You can use APP_ALIAS almost anywhere APP_ID can be used. For example, f?p syntax can use an APP_ALIAS or an application ID as demonstrated in this example:
 
 Copyf?p=ABC:1:&APP_SESSION.
@@ -183,7 +184,8 @@ The following is an HTML example:
 CopyClick me to go to page 1 <a href="f?p=&APP_ALIAS.:1:&APP_SESSION."> of the current application</a>
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.6 APP_AJAX_X01, ... APP_AJAX_X10
+<a id="6"></a>
+### 6 AP_AJAX_X01, ... APP_AJAX_X10
 APP_AJAX_Xnn specifies the values of the APP_AJAX_X01, ... APP_AJAX_X10 URL parameters most recently passed to or set within the show or accept modules. You typically use these variables in On Demand AJAX processes.
 
 Table 3-8 APP_AJAX_Xnn Syntax
@@ -204,7 +206,8 @@ G_X01, ... G_X10 variables in the APEX_APPLICATION in Oracle Application Express
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.7 APP_BUILDER_SESSION
+<a id="7"></a>
+### 7 APP_BUILDER_SESSION
 If the user is also logged in to the workspace as a developer, APP_BUILDER_SESSION contains the current session ID of the development environment. Otherwise, APP_BUILDER_SESSION is null.
 
 Table 3-9 APP_BUILDER_SESSION Syntax
@@ -224,7 +227,8 @@ Substitution string
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.8 APP_DATE_TIME_FORMAT
+<a id="8"></a>
+### 8 APP_DATE_TIME_FORMAT
 APP_DATE_TIME_FORMAT is the application date time format of the application. This value reflects the format specified in the Application Date Time Format attribute of the Globalization settings of an application. If the Application Date Time Format is not set in an application, then a reference to APP_DATE_TIME_FORMAT returns the database session NLS date format and the NLS time format.
 
 Table 3-10 APP_DATE_TIME_FORMAT Syntax
@@ -244,7 +248,8 @@ Substitution string
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.9 APP_IMAGES
+<a id="9"></a>
+### 9 APP_IMAGES
 Use this substitution string to reference uploaded images, JavaScript, and cascading style sheets that are specific to a given application and are not shared over many applications. If you upload a file and make it specific to an application, then you must use this substitution string, or bind variable.
 
 Table 3-11 APP_IMAGES Syntax
@@ -276,7 +281,8 @@ See Also:
 
 Parent topic: Using Built-in Substitution Strings
 
-3.9.4.10 APP_NLS_DATE_FORMAT
+<a id="10"></a>
+### 10 APP_NLS_DATE_FORMAT
 APP_NLS_DATE_FORMAT is the application date format of the database session. This value reflects the format specified in the Application Date Format attribute of the Globalization settings of the application. However, if the Application Date Format is not set, then APP_NLS_DATE_FORMAT returns the NLS_DATE_FORMAT value of the database session at the start of the request to the Application Express engine.
 
 Table 3-12 APP_NLS_DATE_FORMAT Syntax
