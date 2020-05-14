@@ -1,6 +1,7 @@
 # apex-built-in-subtitution-string
 apex built in subtitution string
 
+<a id="0"></a>
 ### Using Built-in Substitution Strings
 App Builder supports many built-in substitution strings. You can reference these substitution strings to achieve specific types of functionality.
 
@@ -60,20 +61,18 @@ APEX$ROW_NUM refers the currently processed row number of a submitted tabular fo
 
 Table 3-3 APEX$ROW_NUM Syntax
 
-Reference Type	Syntax
-Bind variable
+No  | Tanggal  | Items | Catatan 
+:---:| :---: | :--- | ---
+1 | 2019-07-16 10:46 | Github | dedimoe
+2 | a | b |    c
 
-:APEX$ROW_NUM
+Reference Type | Syntax
+:---: | :--:
+Bind variable | ```:APEX$ROW_NUM```
+PL/SQL | ```V('APEX$ROW_NUM')```
+Substitution string | ```&APEX$ROW_NUM.```
 
-PL/SQL
-
-V('APEX$ROW_NUM')
-
-Substitution string
-
-&APEX$ROW_NUM.
-
-
+[^top](#0)
 <a id="2"></a>
 ### 2 APEX$ROW_SELECTOR
 Use APEX$ROW_SELECTOR in validations, processes, and conditions associated with a tabular form to refer to the row selector check box in a tabular form. This placeholder returns X if the tabular form row selector check box of the currently processed tabular form row is checked and NULL if it unchecked.
