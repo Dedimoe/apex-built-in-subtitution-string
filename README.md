@@ -8,7 +8,9 @@ Tip: Note that bind variable :USER has special meaning within the database. Also
 
 
 APEX$ROW_NUM
+
 APEX$ROW_SELECTOR
+
 APEX$ROW_STATUS
 APP_ID
 APP_ALIAS
