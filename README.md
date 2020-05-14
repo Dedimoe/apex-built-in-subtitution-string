@@ -74,21 +74,13 @@ Use APEX$ROW_SELECTOR in validations, processes, and conditions associated with 
 
 Table 3-4 APEX$ROW_SELECTOR Syntax
 
-Reference Type	Syntax
-Bind variable
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APEX$ROW_SELECTOR```
+PL/SQL | ```V('APEX$ROW_SELECTOR')```
+Substitution string | ```&APEX$ROW_SELECTOR.```
 
-:APEX$ROW_SELECTOR
-
-PL/SQL
-
-V('APEX$ROW_SELECTOR')
-
-Substitution string
-
-&APEX$ROW_SELECTOR.
-
-Parent topic: Using Built-in Substitution Strings
-
+[^top](#0)
 <a id="3"></a>
 ### 3 APEX$ROW_STATUS
 Use APEX$STATUS in validations, processes, and conditions associated with a tabular form to refer to the row status in a tabular form. This placeholder returns the status of C if created, U if updated, or D if deleted for the currently processed tabular form row.
