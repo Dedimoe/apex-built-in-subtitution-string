@@ -7,7 +7,7 @@ App Builder supports many built-in substitution strings. You can reference these
 Tip: Note that bind variable :USER has special meaning within the database. Also, the term Direct PL/SQL refers to PL/SQL that can be used in stored database objects such as procedures and functions.
 
 
-APEX$ROW_NUM
+1.[APEX$ROW_NUM](#1)
 
 APEX$ROW_SELECTOR
 
@@ -56,8 +56,8 @@ THEME_IMAGES
 WORKSPACE_IMAGES
 WORKSPACE_ID
 
-
-3.9.4.1 APEX$ROW_NUM
+<a id="1"></a>
+### 1 APEX$ROW_NUM
 APEX$ROW_NUM refers the currently processed row number of a submitted tabular form data. You can use this placeholder in validations, processes, and conditions associated with a tabular form to refer to the row number of the currently processed tabular form row.
 
 Table 3-3 APEX$ROW_NUM Syntax
@@ -75,9 +75,9 @@ Substitution string
 
 &APEX$ROW_NUM.
 
-Parent topic: Using Built-in Substitution Strings
 
-3.9.4.2 APEX$ROW_SELECTOR
+<a id="2"></a>
+### 2 APEX$ROW_SELECTOR
 Use APEX$ROW_SELECTOR in validations, processes, and conditions associated with a tabular form to refer to the row selector check box in a tabular form. This placeholder returns X if the tabular form row selector check box of the currently processed tabular form row is checked and NULL if it unchecked.
 
 Table 3-4 APEX$ROW_SELECTOR Syntax
