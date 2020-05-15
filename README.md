@@ -127,28 +127,23 @@ Oracle Application Express sets up the APEX$SESSION context when it starts to pr
 <a id="1"></a>
 ### 5. APP_ALIAS
 APP_ALIAS is an alphanumeric name for the current application. APP_ALIAS is different from the APP_ID in that the APP_ID must be unique over all workspaces and all applications hosted in one database. In contrast, APP_ALIAS must be unique within a workspace. For example, by using the same APP_ALIAS you can create the application, ABC, in two different workspaces. You can use APP_ALIAS almost anywhere APP_ID can be used. For example, f?p syntax can use an APP_ALIAS or an application ID as demonstrated in this example:
-
-Copyf?p=ABC:1:&APP_SESSION.
+```
+f?p=ABC:1:&APP_SESSION.
+```
 This example runs application ABC, page 1 using the current session.
 
 Table 3-7 APP_ALIAS Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_ALIAS
-
-PL/SQL
-
-V('APP_ALIAS')
-
-Substitution string
-
-&APP_ALIAS.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_ALIAS```
+PL/SQL | ```V('APP_ALIAS')```
+Substitution string | ```&APP_ALIAS.```
 
 The following is an HTML example:
-
-CopyClick me to go to page 1 <a href="f?p=&APP_ALIAS.:1:&APP_SESSION."> of the current application</a>
+```
+Click me to go to page 1 <a href="f?p=&APP_ALIAS.:1:&APP_SESSION."> of the current application</a>
+```
 
 [^top](#0)
 <a id="6"></a>
@@ -157,19 +152,15 @@ APP_AJAX_Xnn specifies the values of the APP_AJAX_X01, ... APP_AJAX_X10 URL para
 
 Table 3-8 APP_AJAX_Xnn Syntax
 
-Reference Type	Syntax
-Bind variable
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```... :APP_AJAX_X01, ... :APP_AJAX_X10```
+PL/SQL | ```... v('APP_AJAX_X01'), ... v('APP_AJAX_X10')```
+Substitution string | ```... &APP_AJAX_X01., ... &APP_AJAX_X10.```
 
-... :APP_AJAX_X01, ... :APP_AJAX_X10
-PL/SQL
-
-... v('APP_AJAX_X01'), ... v('APP_AJAX_X10')
-Substitution string
-
-... &APP_AJAX_X01., ... &APP_AJAX_X10.
 See Also:
 
-G_X01, ... G_X10 variables in the APEX_APPLICATION in Oracle Application Express API Reference
+G_X01, ... G_X10 variables in the APEX_APPLICATION in [Oracle Application Express API Reference](https://docs.oracle.com/pls/topic/lookup?ctx=en/database/oracle/application-express/20.1/htmdb&id=AEAPI214).
 
 
 [^top](#0)
