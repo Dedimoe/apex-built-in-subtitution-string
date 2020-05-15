@@ -100,37 +100,26 @@ APP_ID identifies the application ID of the currently executing application.
 
 Table 3-6 APP_ID Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_ID
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_FLOW_ID (A NUMBER)
-
-PL/SQL
-
-NV('APP_ID')
-
-Substitution string
-
-&APP_ID.
-
-SYS_CONTEXT variable
-
-SYS_CONTEXT('APEX$SESSION', 'APP_ID')
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_ID```
+Direct PL/SQL | ```APEX_APPLICATION.G_FLOW_ID (A NUMBER)```
+PL/SQL | ```NV('APP_ID')```
+Substitution string | ```&APP_ID.```
+SYS_CONTEXT variable | ```SYS_CONTEXT('APEX$SESSION', 'APP_ID')```
 
 Substitution String Reference Example
 
 The following is an example of a substitution string reference:
-
-Copyf?p=&APP_ID.:40:&APP_SESSION.
+```
+f?p=&APP_ID.:40:&APP_SESSION.
+```
 SYS_CONTEXT Variable Example
 
 The following is a SYS_CONTEXT variable example:
-
-CopySELECT ... WHERE application_id = SYS_CONTEXT('APEX$SESSION', 'APP_ID')
+```
+SELECT ... WHERE application_id = SYS_CONTEXT('APEX$SESSION', 'APP_ID')
+```
 Oracle Application Express sets up the APEX$SESSION context when it starts to process an incoming request. For example, you can use the value of 'APP_ID' to access the current application ID in queries and Virtual Private Database (VPD) security policies that protect your table data.
 
 
