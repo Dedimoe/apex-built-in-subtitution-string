@@ -170,18 +170,11 @@ If the user is also logged in to the workspace as a developer, APP_BUILDER_SESSI
 
 Table 3-9 APP_BUILDER_SESSION Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_BUILDER_SESSION
-
-PL/SQL
-
-V('APP_BUILDER_SESSION')
-
-Substitution string
-
-&APP_BUILDER_SESSION.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_BUILDER_SESSION```
+PL/SQL | ```V('APP_BUILDER_SESSION')```
+Substitution string | ``&APP_BUILDER_SESSION.```
 
 
 [^top](#0)
