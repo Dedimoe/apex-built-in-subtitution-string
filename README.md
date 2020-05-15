@@ -174,7 +174,7 @@ Reference Type | Syntax
 :-- | :--
 Bind variable | ```:APP_BUILDER_SESSION```
 PL/SQL | ```V('APP_BUILDER_SESSION')```
-Substitution string | ``&APP_BUILDER_SESSION.```
+Substitution string | ```&APP_BUILDER_SESSION.```
 
 
 [^top](#0)
@@ -184,18 +184,11 @@ APP_DATE_TIME_FORMAT is the application date time format of the application. Thi
 
 Table 3-10 APP_DATE_TIME_FORMAT Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_DATE_TIME_FORMAT
-
-PL/SQL
-
-V('APP_DATE_TIME_FORMAT')
-
-Substitution string
-
-&APP_DATE_TIME_FORMAT.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_DATE_TIME_FORMAT```
+PL/SQL | ```V('APP_DATE_TIME_FORMAT')```
+Substitution string | ```&APP_DATE_TIME_FORMAT.```
 
 
 [^top](#0)
