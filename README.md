@@ -87,21 +87,13 @@ Use APEX$STATUS in validations, processes, and conditions associated with a tabu
 
 Table 3-5 APEX$ROW_STATUS Syntax
 
-Reference Type	Syntax
-Bind variable
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APEX$ROW_STATUS```
+PL/SQL | ```V('APEX$ROW_STATUS')```
+Substitution string | ```&APEX$ROW_STATUS.```
 
-:APEX$ROW_STATUS
-
-PL/SQL
-
-V('APEX$ROW_STATUS')
-
-Substitution string
-
-&APEX$ROW_STATUS.
-
-Parent topic: Using Built-in Substitution Strings
-
+[^top](#0)
 <a id="4"></a>
 ### 4 APP_ID
 APP_ID identifies the application ID of the currently executing application.
