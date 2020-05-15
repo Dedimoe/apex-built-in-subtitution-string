@@ -56,7 +56,7 @@ Tip: Note that bind variable :USER has special meaning within the database. Also
 46. [WORKSPACE_ID](#46)
 
 <a id="1"></a>
-### 1 APEX$ROW_NUM
+### 1. APEX$ROW_NUM
 APEX$ROW_NUM refers the currently processed row number of a submitted tabular form data. You can use this placeholder in validations, processes, and conditions associated with a tabular form to refer to the row number of the currently processed tabular form row.
 
 Table 3-3 APEX$ROW_NUM Syntax
@@ -69,7 +69,7 @@ Substitution string | ```&APEX$ROW_NUM.```
 
 [^top](#0)
 <a id="2"></a>
-### 2 APEX$ROW_SELECTOR
+### 2. APEX$ROW_SELECTOR
 Use APEX$ROW_SELECTOR in validations, processes, and conditions associated with a tabular form to refer to the row selector check box in a tabular form. This placeholder returns X if the tabular form row selector check box of the currently processed tabular form row is checked and NULL if it unchecked.
 
 Table 3-4 APEX$ROW_SELECTOR Syntax
@@ -82,7 +82,7 @@ Substitution string | ```&APEX$ROW_SELECTOR.```
 
 [^top](#0)
 <a id="3"></a>
-### 3 APEX$ROW_STATUS
+### 3. APEX$ROW_STATUS
 Use APEX$STATUS in validations, processes, and conditions associated with a tabular form to refer to the row status in a tabular form. This placeholder returns the status of C if created, U if updated, or D if deleted for the currently processed tabular form row.
 
 Table 3-5 APEX$ROW_STATUS Syntax
@@ -95,7 +95,7 @@ Substitution string | ```&APEX$ROW_STATUS.```
 
 [^top](#0)
 <a id="4"></a>
-### 4 APP_ID
+### 4. APP_ID
 APP_ID identifies the application ID of the currently executing application.
 
 Table 3-6 APP_ID Syntax
@@ -133,10 +133,10 @@ The following is a SYS_CONTEXT variable example:
 CopySELECT ... WHERE application_id = SYS_CONTEXT('APEX$SESSION', 'APP_ID')
 Oracle Application Express sets up the APEX$SESSION context when it starts to process an incoming request. For example, you can use the value of 'APP_ID' to access the current application ID in queries and Virtual Private Database (VPD) security policies that protect your table data.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="1"></a>
-### 5 APP_ALIAS
+### 5. APP_ALIAS
 APP_ALIAS is an alphanumeric name for the current application. APP_ALIAS is different from the APP_ID in that the APP_ID must be unique over all workspaces and all applications hosted in one database. In contrast, APP_ALIAS must be unique within a workspace. For example, by using the same APP_ALIAS you can create the application, ABC, in two different workspaces. You can use APP_ALIAS almost anywhere APP_ID can be used. For example, f?p syntax can use an APP_ALIAS or an application ID as demonstrated in this example:
 
 Copyf?p=ABC:1:&APP_SESSION.
@@ -160,10 +160,10 @@ Substitution string
 The following is an HTML example:
 
 CopyClick me to go to page 1 <a href="f?p=&APP_ALIAS.:1:&APP_SESSION."> of the current application</a>
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="6"></a>
-### 6 AP_AJAX_X01, ... APP_AJAX_X10
+### 6. AP_AJAX_X01, ... APP_AJAX_X10
 APP_AJAX_Xnn specifies the values of the APP_AJAX_X01, ... APP_AJAX_X10 URL parameters most recently passed to or set within the show or accept modules. You typically use these variables in On Demand AJAX processes.
 
 Table 3-8 APP_AJAX_Xnn Syntax
@@ -182,10 +182,10 @@ See Also:
 
 G_X01, ... G_X10 variables in the APEX_APPLICATION in Oracle Application Express API Reference
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="7"></a>
-### 7 APP_BUILDER_SESSION
+### 7. APP_BUILDER_SESSION
 If the user is also logged in to the workspace as a developer, APP_BUILDER_SESSION contains the current session ID of the development environment. Otherwise, APP_BUILDER_SESSION is null.
 
 Table 3-9 APP_BUILDER_SESSION Syntax
@@ -203,10 +203,10 @@ Substitution string
 
 &APP_BUILDER_SESSION.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="8"></a>
-### 8 APP_DATE_TIME_FORMAT
+### 8. APP_DATE_TIME_FORMAT
 APP_DATE_TIME_FORMAT is the application date time format of the application. This value reflects the format specified in the Application Date Time Format attribute of the Globalization settings of an application. If the Application Date Time Format is not set in an application, then a reference to APP_DATE_TIME_FORMAT returns the database session NLS date format and the NLS time format.
 
 Table 3-10 APP_DATE_TIME_FORMAT Syntax
@@ -224,10 +224,10 @@ Substitution string
 
 &APP_DATE_TIME_FORMAT.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="9"></a>
-### 9 APP_IMAGES
+### 9. APP_IMAGES
 Use this substitution string to reference uploaded images, JavaScript, and cascading style sheets that are specific to a given application and are not shared over many applications. If you upload a file and make it specific to an application, then you must use this substitution string, or bind variable.
 
 Table 3-11 APP_IMAGES Syntax
@@ -257,10 +257,10 @@ See Also:
 
 "IMAGE_PREFIX," "WORKSPACE_IMAGES," and "About Managing Images"
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="10"></a>
-### 10 APP_NLS_DATE_FORMAT
+### 10. APP_NLS_DATE_FORMAT
 APP_NLS_DATE_FORMAT is the application date format of the database session. This value reflects the format specified in the Application Date Format attribute of the Globalization settings of the application. However, if the Application Date Format is not set, then APP_NLS_DATE_FORMAT returns the NLS_DATE_FORMAT value of the database session at the start of the request to the Application Express engine.
 
 Table 3-12 APP_NLS_DATE_FORMAT Syntax
@@ -278,10 +278,10 @@ Substitution string
 
 &APP_NLS_DATE_FORMAT.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="11"></a>
-### 11 APP_NLS_TIMESTAMP_FORMAT
+### 11. APP_NLS_TIMESTAMP_FORMAT
 APP_NLS_TIMESTAMP_FORMAT is the application timestamp format of the database session. This value reflects the format specified in the Application Timestamp Format attribute of the Globalization settings of the application. However, if the Application Timestamp Format is not set, then APP_NLS_TIMESTAMP_FORMAT return the NLS_TIMESTAMP_FORMAT value of the database session at the start of the request to the Application Express engine.
 
 Table 3-13 APP_NLS_TIMESTAMP_FORMAT Syntax
@@ -299,10 +299,10 @@ Substitution string
 
 &APP_NLS_TIMESTAMP_FORMAT.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="12"></a>
-### 12 APP_NLS_TIMESTAMP_TZ_FORMAT
+### 12. APP_NLS_TIMESTAMP_TZ_FORMAT
 APP_NLS_TIMESTAMP_TZ_FORMAT is the application timestamp time zone format of the database session. This value reflects the format specified in the Application Timestamp Time Zone Format attribute of the Globalization settings of an application. However, if the Application Timestamp Time Zone Format is not set, then APP_NLS_TIMESTAMP_TZ_FORMAT returns the NLS_TIMESTAMP_TZ_FORMAT value of the database session at the start of the request to the Application Express engine.
 
 Table 3-14 APP_NLS_TIMESTAMP_TZ_FORMAT Syntax
@@ -320,10 +320,10 @@ Substitution string
 
 &APP_NLS_TIMESTAMP_TZ_FORMAT.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="13"></a>
-### 13 APP_PAGE_ALIAS
+### 13. APP_PAGE_ALIAS
 APP_PAGE_ALIAS is an alphanumeric name for the current application page. A page alias is not case-sensitive and it is an optional page attribute. APP_PAGE_ALIAS is unique within an application. You can use APP_PAGE_ALIAS almost anywhere APP_PAGE_ID can be used.
 
 Table 3-15 APP_PAGE_ALIAS Syntax
@@ -345,10 +345,10 @@ The following is an HTML example:
 
 The alias of the current page is: &APP_PAGE_ALIAS.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="14"></a>
-### 14 APP_PAGE_ID
+### 14. APP_PAGE_ID
 APP_PAGE_ID is the current application page ID. For example, if your application was on page 3, then the result would be 3. Using this syntax is useful when writing application components that must work generically in multiple applications.
 
 Table 3-16 APP_PAGE_ID Syntax
@@ -373,10 +373,10 @@ Substitution string
 The following is an example of a substitution string reference:
 
 Copyf?p=&APP_ID.:&APP_PAGE_ID.:&APP_SESSION.
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="15"></a>
-### 15 APP_REGION_ID
+### 15. APP_REGION_ID
 APP_REGION_ID identifies the ID of the current executing region.
 
 Table 3-17 APP_REGION_ID Syntax
@@ -394,10 +394,10 @@ Substitution string
 
 &APP_REGION_ID.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="16"></a>
-### 16 APP_REGION_STATIC_ID
+### 16. APP_REGION_STATIC_ID
 APP_REGION_STATIC_ID identifies the static ID of the current executing region. If no static ID has been entered by a developer, NULL is returned.
 
 Table 3-18 APP_REGION_STATIC_ID Syntax
@@ -415,10 +415,10 @@ Substitution string
 
 &APP_REGION_STATIC_ID.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="17"></a>
-### 17 APP_REQUEST_DATA_HASH
+### 17. APP_REQUEST_DATA_HASH
 APP_REQUEST_DATA_HASH is a hash value of the request, item name, and item value parts in the URL. It is primarily useful to detect whether two browser requests passed different parameters to Oracle Application Express.
 
 Table 3-19 APP_REQUEST_DATA_HASH Syntax
@@ -436,10 +436,10 @@ Substitution string
 
 &APP_REQUEST_DATA_HASH.
 
-Parent topic: Using Built-in Substitution Strings
 
+[^top](#0)
 <a id="18"></a>
-### 18 APP_SESSION
+### 18. APP_SESSION
 APP_SESSION is the most commonly used built-in substitution strings. You can use this substitution string to create hypertext links between application pages that maintain a session state by passing the session number. Note that you can also use the substitution string SESSION in place of APP_SESSION.
 
 Table 3-20 APP_SESSION Syntax
