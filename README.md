@@ -198,30 +198,17 @@ Use this substitution string to reference uploaded images, JavaScript, and casca
 
 Table 3-11 APP_IMAGES Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_IMAGES
-
-Direct PL/SQL
-
-Not available.
-
-PL/SQL
-
-V('APP_IMAGES')
-
-Substitution string
-
-&APP_IMAGES.
-
-Template substitution
-
-#APP_IMAGES#
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_IMAGES```
+Direct PL/SQL | Not available.
+PL/SQL | ```V('APP_IMAGES')```
+Substitution string | ```&APP_IMAGES.```
+Template substitution | ```#APP_IMAGES#```
 
 See Also:
 
-"IMAGE_PREFIX," "WORKSPACE_IMAGES," and "About Managing Images"
+"[IMAGE_PREFIX](#28)," "[WORKSPACE_IMAGES](#45)," and "[About Managing Images](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/about-managing-images.html#GUID-39F51BEA-E301-438C-84F7-0C08F427506A)"
 
 
 [^top](#0)
@@ -231,18 +218,11 @@ APP_NLS_DATE_FORMAT is the application date format of the database session. This
 
 Table 3-12 APP_NLS_DATE_FORMAT Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_NLS_DATE_FORMAT
-
-PL/SQL
-
-V('APP_NLS_DATE_FORMAT')
-
-Substitution string
-
-&APP_NLS_DATE_FORMAT.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_NLS_DATE_FORMAT```
+PL/SQL | ```V('APP_NLS_DATE_FORMAT')```
+Substitution string | ```&APP_NLS_DATE_FORMAT.```
 
 
 [^top](#0)
