@@ -208,7 +208,7 @@ Template substitution | ```#APP_IMAGES#```
 
 See Also:
 
-"[IMAGE_PREFIX](#28)," "[WORKSPACE_IMAGES](#45)," and "[About Managing Images](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/about-managing-images.html#GUID-39F51BEA-E301-438C-84F7-0C08F427506A)"
+"[IMAGE_PREFIX](#28)", "[WORKSPACE_IMAGES](#45)", and "[About Managing Images](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/about-managing-images.html#GUID-39F51BEA-E301-438C-84F7-0C08F427506A)"
 
 
 [^top](#0)
