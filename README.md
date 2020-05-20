@@ -246,18 +246,11 @@ APP_NLS_TIMESTAMP_TZ_FORMAT is the application timestamp time zone format of the
 
 Table 3-14 APP_NLS_TIMESTAMP_TZ_FORMAT Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_NLS_TIMESTAMP_TZ_FORMAT
-
-PL/SQL
-
-V('APP_NLS_TIMESTAMP_TZ_FORMAT')
-
-Substitution string
-
-&APP_NLS_TIMESTAMP_TZ_FORMAT.
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | :APP_NLS_TIMESTAMP_TZ_FORMAT
+PL/SQL | V('APP_NLS_TIMESTAMP_TZ_FORMAT')
+Substitution string | &APP_NLS_TIMESTAMP_TZ_FORMAT.
 
 
 [^top](#0)
