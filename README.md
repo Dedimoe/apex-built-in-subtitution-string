@@ -263,7 +263,7 @@ Table 3-15 APP_PAGE_ALIAS Syntax
 Reference Type | Syntax
 :-- | :--
 Bind variable | ```:APP_PAGE_ALIAS```
-PL/SQL | ```v('APP_PAGE_ALIAS')````
+PL/SQL | ```v('APP_PAGE_ALIAS')```
 Substitution string | ```&APP_PAGE_ALIAS.```
 
 The following is an HTML example:
