@@ -260,23 +260,16 @@ APP_PAGE_ALIAS is an alphanumeric name for the current application page. A page 
 
 Table 3-15 APP_PAGE_ALIAS Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_PAGE_ALIAS
-
-PL/SQL
-
-v('APP_PAGE_ALIAS')
-
-Substitution string
-
-&APP_PAGE_ALIAS.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_PAGE_ALIAS```
+PL/SQL | ```v('APP_PAGE_ALIAS')````
+Substitution string | ```&APP_PAGE_ALIAS.```
 
 The following is an HTML example:
-
+```
 The alias of the current page is: &APP_PAGE_ALIAS.
-
+```
 
 [^top](#0)
 <a id="14"></a>
@@ -285,26 +278,17 @@ APP_PAGE_ID is the current application page ID. For example, if your application
 
 Table 3-16 APP_PAGE_ID Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_PAGE_ID
-
-PL/SQL
-
-:APP_PAGE_ID
-
-PL/SQL and Direct PL
-
-NV('APP_PAGE_ID')
-
-Substitution string
-
-&APP_PAGE_ID.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_PAGE_ID```
+PL/SQL | ```:APP_PAGE_ID```
+PL/SQL and Direct PL | ```NV('APP_PAGE_ID')```
+Substitution string | ```&APP_PAGE_ID.```
 
 The following is an example of a substitution string reference:
-
-Copyf?p=&APP_ID.:&APP_PAGE_ID.:&APP_SESSION.
+```
+f?p=&APP_ID.:&APP_PAGE_ID.:&APP_SESSION.
+```
 
 [^top](#0)
 <a id="15"></a>
@@ -313,18 +297,11 @@ APP_REGION_ID identifies the ID of the current executing region.
 
 Table 3-17 APP_REGION_ID Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_REGION_ID
-
-PL/SQL
-
-v('APP_REGION_ID')
-
-Substitution string
-
-&APP_REGION_ID.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_REGION_ID```
+PL/SQL | ```v('APP_REGION_ID')```
+Substitution string | ```&APP_REGION_ID.```
 
 
 [^top](#0)
