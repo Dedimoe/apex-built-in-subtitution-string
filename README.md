@@ -232,18 +232,11 @@ APP_NLS_TIMESTAMP_FORMAT is the application timestamp format of the database ses
 
 Table 3-13 APP_NLS_TIMESTAMP_FORMAT Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_NLS_TIMESTAMP_FORMAT
-
-PL/SQL
-
-V('APP_NLS_TIMESTAMP_FORMAT')
-
-Substitution string
-
-&APP_NLS_TIMESTAMP_FORMAT.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_NLS_TIMESTAMP_FORMAT```
+PL/SQL | ```V('APP_NLS_TIMESTAMP_FORMAT')```
+Substitution string | ```&APP_NLS_TIMESTAMP_FORMAT.```
 
 
 [^top](#0)
