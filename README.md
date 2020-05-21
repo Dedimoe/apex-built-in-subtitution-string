@@ -341,25 +341,11 @@ Table 3-20 APP_SESSION Syntax
 
 Reference Type | Syntax
 :-- | :--
-Bind variable | 
-
-:APP_SESSION
-
-PL/SQL | 
-
-V('APP_SESSION')
-
-Short PL/SQL | 
-
-V('SESSION')
-
-Substitution string | 
-
-&APP_SESSION.
-
-SYS_CONTEXT variable | 
-
-SYS_CONTEXT('APEX$SESSION', 'APP_SESSION')
+Bind variable | ```:APP_SESSION```
+PL/SQL | ```V('APP_SESSION')```
+Short PL/SQL | ```V('SESSION')```
+Substitution string | ```&APP_SESSION.```
+SYS_CONTEXT variable | ```SYS_CONTEXT('APEX$SESSION', 'APP_SESSION')```
 
 Consider the following examples:
 
