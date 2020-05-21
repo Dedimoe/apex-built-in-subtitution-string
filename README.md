@@ -996,7 +996,7 @@ Template substitution | ```#WORKSPACE_IMAGES#```
 
 See Also:
 
-"(APP_IMAGES)[https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/understanding-substitution-strings.html#GUID-B45FD5D3-2496-40A6-9402-8D8D750E82E3]" and "(IMAGE_PREFIX)[https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/understanding-substitution-strings.html#GUID-2903142F-17A1-4DF4-956C-1CC0A238A4E4]".
+"[APP_IMAGES](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/understanding-substitution-strings.html#GUID-B45FD5D3-2496-40A6-9402-8D8D750E82E3)" and "[IMAGE_PREFIX](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/understanding-substitution-strings.html#GUID-2903142F-17A1-4DF4-956C-1CC0A238A4E4)".
 
 
 
