@@ -986,35 +986,22 @@ Use this substitution string to reference uploaded images, JavaScript, and casca
 
 Table 3-38 WORKSPACE_IMAGES Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:WORKSPACE_IMAGES
-
-Direct PL/SQL
-
-Not available
-
-PL/SQL
-
-V('WORKSPACE_IMAGES')
-
-Substitution string
-
-&WORKSPACE_IMAGES.
-
-Template substitution
-
-#WORKSPACE_IMAGES#
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:WORKSPACE_IMAGES```
+Direct PL/SQL | Not available
+PL/SQL | ```V('WORKSPACE_IMAGES')```
+Substitution string | ```&WORKSPACE_IMAGES.```
+Template substitution | ```#WORKSPACE_IMAGES#```
 
 See Also:
 
 "APP_IMAGES" and "IMAGE_PREFIX"
 
-Parent topic: Using Built-in Substitution Strings
 
 
-[^top](#0) <a id="46"></a> 
+[^top](#0)
+<a id="46"></a> 
 ### 46 WORKSPACE_ID
 Use this substitution string to reference the workspace ID.
 
