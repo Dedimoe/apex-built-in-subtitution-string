@@ -339,44 +339,48 @@ APP_SESSION is the most commonly used built-in substitution strings. You can use
 
 Table 3-20 APP_SESSION Syntax
 
-Reference Type	Syntax
-Bind variable
+Reference Type | Syntax
+:-- | :--
+Bind variable | 
 
 :APP_SESSION
 
-PL/SQL
+PL/SQL | 
 
 V('APP_SESSION')
 
-Short PL/SQL
+Short PL/SQL | 
 
 V('SESSION')
 
-Substitution string
+Substitution string | 
 
 &APP_SESSION.
 
-SYS_CONTEXT variable
+SYS_CONTEXT variable | 
 
 SYS_CONTEXT('APEX$SESSION', 'APP_SESSION')
 
 Consider the following examples:
 
 From within an HTML region:
-
-Copy<a href="f?p=100:5:&APP_SESSION.">click me</a> 
+```
+<a href="f?p=100:5:&APP_SESSION.">click me</a> 
+```
 Using PL/SQL:
-
-Copyhtf.anchor('f?p=100:5:'||V('APP_SESSION'),'click me');
+```
+htf.anchor('f?p=100:5:'||V('APP_SESSION'),'click me');
+```
 Using a SQL query:
-
-CopySELECT htf.anchor('f?p=100:5:'||:APP_SESSION,'click me') FROM DUAL;
+```
+SELECT htf.anchor('f?p=100:5:'||:APP_SESSION,'click me') FROM DUAL;
+```
 Using the SYS_CONTEXT variable:
-
-CopySELECT ... WHERE apex_session_id = SYS_CONTEXT('APEX$SESSION', 'APP_SESSION')
+```
+SELECT ... WHERE apex_session_id = SYS_CONTEXT('APEX$SESSION', 'APP_SESSION')
+```
 Oracle Application Express sets up the APEX$SESSION context when it starts to process an incoming request. For example, you can use the value of 'APP_SESSION' to access the current application session in queries and VPD (Virtual Private Database) security policies that protect your table data.
 
-Parent topic: Using Built-in Substitution Strings
 
 <a id="19"></a>
 ### 19 APP_SESSION_VISIBLE
