@@ -980,8 +980,7 @@ Copy#THEME_IMAGES#
 Parent topic: Using Built-in Substitution Strings
 
 
-[^top](#0)
-<a id="45"></a>
+[^top](#0) <a id="45"></a>
 ### 45 WORKSPACE_IMAGES
 Use this substitution string to reference uploaded images, JavaScript, and cascading style sheets that are shared over many applications within a workspace.
 
@@ -1015,7 +1014,8 @@ See Also:
 Parent topic: Using Built-in Substitution Strings
 
 
-[^top](#0) <a id="46"></a> ### 46 WORKSPACE_ID
+[^top](#0) <a id="46"></a> 
+### 46 WORKSPACE_ID
 Use this substitution string to reference the workspace ID.
 
 Table 3-39 WORKSPACE_ID Syntax
