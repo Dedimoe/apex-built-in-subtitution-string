@@ -1015,9 +1015,7 @@ See Also:
 Parent topic: Using Built-in Substitution Strings
 
 
-[^top](#0)
-<a id="46"></a>
-### 46 WORKSPACE_ID
+[^top](#0) <a id="46"></a> ### 46 WORKSPACE_ID
 Use this substitution string to reference the workspace ID.
 
 Table 3-39 WORKSPACE_ID Syntax
@@ -1047,5 +1045,7 @@ Using the SYS_CONTEXT variable:
 SELECT ... WHERE workspace_id = SYS_CONTEXT('APEX$SESSION', 'WORKSPACE_ID')
 ```
 Oracle Application Express sets up the APEX$SESSION context when it starts to process an incoming request. For example, you can use the value of 'WORKSPACE_ID' to access the current workspace ID value in queries and VPD (Virtual Private Database) security policies that protect your table data.
+
+[^top](#0)
 
 source: [oracle-doc](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/understanding-substitution-strings.html#GUID-34118202-1B85-4D38-8C27-F819679504DB).
