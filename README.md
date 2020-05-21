@@ -311,18 +311,11 @@ APP_REGION_STATIC_ID identifies the static ID of the current executing region. I
 
 Table 3-18 APP_REGION_STATIC_ID Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_REGION_STATIC_ID
-
-PL/SQL
-
-v('APP_REGION_STATIC_ID')
-
-Substitution string
-
-&APP_REGION_STATIC_ID.
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | ```:APP_REGION_STATIC_ID```
+PL/SQL | ```v('APP_REGION_STATIC_ID')```
+Substitution string | ```&APP_REGION_STATIC_ID.```
 
 
 [^top](#0)
@@ -332,18 +325,11 @@ APP_REQUEST_DATA_HASH is a hash value of the request, item name, and item value 
 
 Table 3-19 APP_REQUEST_DATA_HASH Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_REQUEST_DATA_HASH
-
-PL/SQL
-
-V('APP_REQUEST_DATA_HASH')
-
-Substitution string
-
-&APP_REQUEST_DATA_HASH.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_REQUEST_DATA_HASH```
+PL/SQL | ```V('APP_REQUEST_DATA_HASH')```
+Substitution string | ```&APP_REQUEST_DATA_HASH.```
 
 
 [^top](#0)
