@@ -975,9 +975,9 @@ Parent topic: Using Built-in Substitution Strings
 <a id="44"></a>
 ### 44 THEME_IMAGES
 Use the THEME_IMAGES substitution string to reference files which are stored with your theme definition. Supported syntax for a template substitution:
-
-Copy#THEME_IMAGES#
-Parent topic: Using Built-in Substitution Strings
+```
+#THEME_IMAGES#
+```
 
 
 [^top](#0) <a id="45"></a>
@@ -989,7 +989,7 @@ Table 3-38 WORKSPACE_IMAGES Syntax
 Reference Type | Syntax
 :-- | :--
 Bind variable | ```:WORKSPACE_IMAGES```
-Direct PL/SQL | Not available
+Direct PL/SQL | ```Not available```
 PL/SQL | ```V('WORKSPACE_IMAGES')```
 Substitution string | ```&WORKSPACE_IMAGES.```
 Template substitution | ```#WORKSPACE_IMAGES#```
