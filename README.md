@@ -374,31 +374,27 @@ APP_SESSION_VISIBLE is similar to the built-in substitution APP_SESSION. Use thi
 
 Table 3-21 APP_SESSION_VISIBLE Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_SESSION_VISIBLE
-
-PL/SQL
-
-V('APP_SESSION_VISIBLE')
-
-Substitution string
-
-&APP_SESSION_VISIBLE.
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | ```:APP_SESSION_VISIBLE```
+PL/SQL | ```V('APP_SESSION_VISIBLE')```
+Substitution string | ```&APP_SESSION_VISIBLE.```
 
 Consider the following examples:
 
 From within an HTML region:
-
-Copy<a href="f?p=100:5:&APP_SESSION_VISIBLE.">click me</a>
+```
+<a href="f?p=100:5:&APP_SESSION_VISIBLE.">click me</a>
+```
 Using PL/SQL:
-
-Copysys.htf.anchor('f?p=100:5:'||V('APP_SESSION_VISIBLE'),'click me');
+```
+sys.htf.anchor('f?p=100:5:'||V('APP_SESSION_VISIBLE'),'click me');
+```
 Using a SQL query:
+```
+SELECT sys.htf.anchor('f?p=100:5:'||:APP_SESSION_VISIBLE,'clickme') FROM DUAL;
+```
 
-CopySELECT sys.htf.anchor('f?p=100:5:'||:APP_SESSION_VISIBLE,'clickme') FROM DUAL;
-Parent topic: Using Built-in Substitution Strings
 
 <a id="20"></a>
 ### 20 APP_TITLE
@@ -406,23 +402,17 @@ APP_TITLE is an alphanumeric title for the current application. The title is der
 
 Table 3-22 APP_TITLE Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_TITLE
-
-PL/SQL
-
-v('APP_TITLE')
-
-Substitution string
-
-&APP_TITLE.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_TITLE```
+PL/SQL | ```v('APP_TITLE')```
+Substitution string | ```&APP_TITLE.```
 
 The following is an HTML example:
+```
+The title of the current application is: &APP_TITLE!HTML.
+```
 
-CopyThe title of the current application is: &APP_TITLE!HTML.
-Parent topic: Using Built-in Substitution Strings
 
 <a id="21"></a>
 ### 21 APP_UNIQUE_PAGE_ID
