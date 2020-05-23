@@ -486,18 +486,11 @@ This application-level attribute identifies a valid authenticated prefix (that i
 
 Table 3-25 AUTHENTICATED_URL_PREFIX Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:AUTHENTICATED_URL_PREFIX
-
-PL/SQL
-
-V('AUTHENTICATED_URL_PREFIX')
-
-Substitution string
-
-&AUTHENTICATED_URL_PREFIX.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:AUTHENTICATED_URL_PREFIX```
+PL/SQL | ```V('AUTHENTICATED_URL_PREFIX')```
+Substitution string | ```&AUTHENTICATED_URL_PREFIX.```
 
 
 [^top](#0)
@@ -507,22 +500,12 @@ BROWSER_LANGUAGE refers to the web browser's current language preference.
 
 Table 3-26 BROWSER_LANGUAGE Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:BROWSER_LANGUAGE
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_BROWSER_LANGUAGE
-
-PL/SQL
-
-V('BROWSER_LANGUAGE')
-
-Substitution string
-
-&BROWSER_LANGUAGE.
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | ```:BROWSER_LANGUAGE```
+Direct PL/SQL | ```APEX_APPLICATION.G_BROWSER_LANGUAGE```
+PL/SQL | ```V('BROWSER_LANGUAGE')```
+Substitution string | ```&BROWSER_LANGUAGE.```
 
 
 [^top](#0)
@@ -532,14 +515,10 @@ CURRENT_PARENT_TAB_TEXT is most useful in page templates, but is only relevant f
 
 Table 3-27 CURRENT_PARENT_TAB_TEXT Syntax
 
-Reference Type	Syntax
-Bind variable
-
-Not Available.
-
-Substitution string
-
-&CURRENT_PARENT_TAB_TEXT.
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | ```Not Available.```
+Substitution string | ```&CURRENT_PARENT_TAB_TEXT.```
 
 
 [^top](#0)
@@ -549,27 +528,17 @@ Valid values for the DEBUG flag are Yes or No. Turning debug on shows details ab
 
 Table 3-28 DEBUG Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:DEBUG
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_DEBUG
-
-PL/SQL
-
-V('DEBUG')
-
-Substitution string
-
-&DEBUG.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:DEBUG```
+Direct PL/SQL | ```APEX_APPLICATION.G_DEBUG```
+PL/SQL | ```V('DEBUG')```
+Substitution string | ```&DEBUG.```
 
 The following is an example of a substitution string reference that preserves the current value of DEBUG:
-
-Copyf?p=100:1:&APP_SESSION.::&DEBUG
-
+```
+f?p=100:1:&APP_SESSION.::&DEBUG
+```
 
 [^top](#0)
 <a id="27"></a>
@@ -578,26 +547,16 @@ HOME_LINK is the home page of an application. The Application Express engine red
 
 Table 3-29 HOME_LINK Syntax
 
-Reference Type	Syntax
-Direct PL/SQL
-
-APEX_APPLICATION.G_HOME_LINK
-
-PL/SQL
-
-V('HOME_LINK')
-
-Template Reference
-
-#HOME_LINK#
-
-Substitution String
-
-&HOME_LINK.
+Reference Type | Syntax
+:-- | :--
+Direct PL/SQL | ```APEX_APPLICATION.G_HOME_LINK```
+PL/SQL | ```V('HOME_LINK')```
+Template Reference | ```#HOME_LINK#```
+Substitution String | ```&HOME_LINK.```
 
 See Also:
 
-"Editing User Interface Attributes" and "Attributes"
+"[Editing User Interface Attributes](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/editing-user-interface-attributes.html#GUID-6572C3DF-8B48-4322-81CA-8480E536B4BE)" and "[Attributes](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/editing-user-interface-attributes.html#GUID-5B1DB349-3AA5-49AC-86BB-8805E4A11ADE)"
 
 
 [^top](#0)
@@ -607,26 +566,13 @@ The value of IMAGE_PREFIX determines the virtual path the web server uses to poi
 
 Table 3-30 IMAGE_PREFIX Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:IMAGE_PREFIX
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_IMAGE_PREFIX
-
-PL/SQL
-
-V('IMAGE_PREFIX')
-
-Substitution string
-
-&IMAGE_PREFIX.
-
-Template Substitution
-
-#IMAGE_PREFIX#
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:IMAGE_PREFIX```
+Direct PL/SQL | ```APEX_APPLICATION.G_IMAGE_PREFIX```
+PL/SQL | ```V('IMAGE_PREFIX')```
+Substitution string | ```&IMAGE_PREFIX.```
+Template Substitution | ```#IMAGE_PREFIX#```
 
 See Also:
 
