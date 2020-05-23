@@ -423,26 +423,20 @@ APP_UNIQUE_PAGE_ID is an integer generated from an Oracle sequence which is uniq
 
 Table 3-23 APP_UNIQUE_PAGE_ID Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_UNIQUE_PAGE_ID
-
-PL/SQL
-
-V('APP_UNIQUE_PAGE_ID')
-
-Substitution string
-
-&APP_UNIQUE_PAGE_ID.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_UNIQUE_PAGE_ID```
+PL/SQL | ```V('APP_UNIQUE_PAGE_ID')```
+Substitution string | ```&APP_UNIQUE_PAGE_ID.```
 
 The following is an HTML example:
-
-CopySELECT 'f?p=100:1:'||:APP_SESSION||':'||:APP_UNIQUE_PAGE_ID||
+```
+SELECT 'f?p=100:1:'||:APP_SESSION||':'||:APP_UNIQUE_PAGE_ID||
     ':::P1_EMPNO:'||employee_id,
    first_name,
     job_id
 FROM employees
+```
 Note the use of the APP_UNIQUE_PAGE_ID in the request column. This makes this URL unique and may avoid excessive browser caching problems.
 
 
