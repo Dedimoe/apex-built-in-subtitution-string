@@ -576,35 +576,34 @@ Template Substitution | ```#IMAGE_PREFIX#```
 
 See Also:
 
-"APP_IMAGES"
-
-"WORKSPACE_IMAGES"
-
-"Editing the Application Definition"
+"[APP_IMAGES](#9)", "[WORKSPACE_IMAGES](#45)", "[Editing the Application Definition](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/editing-application-attributes.html#GUID-8B6DF456-41CC-40E3-877E-A0038677AADE)"
 
 
 [^top](#0)
 <a id="29"></a>
 ### 29 JET_BASE_DIRECTORY
 Use the JET_BASE_DIRECTORY substitution string to reference the base directory of the Oracle JavaScript Extension Toolkit (JET) which ships with Oracle Application Express. Supported syntax for referencing JET_BASE_DIRECTORY :
-
-Copy#JET_BASE_DIRECTORY#
+```
+#JET_BASE_DIRECTORY#
+```
 
 
 [^top](#0)
 <a id="30"></a>
 ### 30 JET_CSS_DIRECTORY
 Use the JET_CSS_DIRECTORY substitution string to reference the base directory of the Oracle JavaScript Extension Toolkit (JET) which ships with Oracle Application Express. Supported syntax for referencing JET_CSS_DIRECTORY:
-
-Copy#JET_CSS_DIRECTORY#
+```
+#JET_CSS_DIRECTORY#
+```
 
 
 [^top](#0)
 <a id="31"></a>
 ### 31 JET_JS_DIRECTORY
 Use the JET_JS_DIRECTORY substitution string to reference the JavaScript directory of the Oracle JavaScript Extension Toolkit (JET) components which ships with Oracle Application Express. Supported syntax for referencing JET_JS_DIRECTORY:
-
-Copy#JET_JS_DIRECTORY#
+```
+#JET_JS_DIRECTORY#
+```
 
 
 [^top](#0)
@@ -614,30 +613,17 @@ Use LOGIN_URL to display a link to a login page for users that are not currently
 
 See Also:
 
-"Authentication" and "Security Page"
+"[Authentication](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/configuring-security-attributes.html#GUID-9DFB08E7-0CA4-4C00-B05F-A0678FAAD326)" and "[Security Page](https://docs.oracle.com/en/database/oracle/application-express/20.1/htmdb/configuring-security-attributes.html#GUID-FDB41857-C144-4AB0-A85C-A33A26259A47)"
 
 Table 3-31 LOGIN_URL Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:LOGIN_URL
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_LOGIN_URL
-
-PL/SQL
-
-V('LOGIN_URL')
-
-Substitution string
-
-&LOGIN_URL.
-
-Template Substitution
-
-#LOGIN_URL#
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:LOGIN_URL```
+Direct PL/SQL | ```APEX_APPLICATION.G_LOGIN_URL```
+PL/SQL | ```V('LOGIN_URL')```
+Substitution string | ```&LOGIN_URL.```
+Template Substitution | ```#LOGIN_URL#```
 
 
 [^top](#0)
@@ -647,22 +633,12 @@ LOGOUT_URL is an application-level attribute used to identify the logout URL. Th
 
 Table 3-32 LOGOUT_URL Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:LOGOUT_URL
-
-PL/SQL
-
-V('LOGOUT_URL')
-
-Substitution string
-
-&LOGOUT_URL.
-
-Template substitution
-
-#LOGOUT_URL#
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:LOGOUT_URL```
+PL/SQL | ```V('LOGOUT_URL')```
+Substitution string | ```&LOGOUT_URL.```
+Template substitution | ```#LOGOUT_URL#```
 
 
 [^top](#0)
@@ -672,23 +648,17 @@ With APP_TEXT$Message_Name, APP_TEXT$Message_Name$Lang built-in substitution, yo
 
 Table 3-33 APP_TEXT$Message_Name, APP_TEXT$Message_Name$Lang Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_TEXT$Message_Name , :APP_TEXT$Message_Name$Lang
-
-PL/SQL
-
-V('APP_TEXT$Message_Name') , V('APP_TEXT$Message_Name$Lang')
-
-Substitution string
-
-&APP_TEXT$Message_Name. , &APP_TEXT$Message_Name$Lang.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_TEXT$Message_Name , :APP_TEXT$Message_Name$Lang```
+PL/SQL | ```V('APP_TEXT$Message_Name') , V('APP_TEXT$Message_Name$Lang')```
+Substitution string | ```&APP_TEXT$Message_Name. , &APP_TEXT$Message_Name$Lang.```
 
 The following is an example for the default and the French text message MY_MESSAGE, using HTML escaping:
-
-CopyDefault text: &APP_TEXT$MY_MESSAGE!HTML.
+```
+Default text: &APP_TEXT$MY_MESSAGE!HTML.
 Pardon my French: &APP_TEXT$MY_MESSAGE$FR!HTML.
+```
 
 
 [^top](#0)
@@ -698,26 +668,20 @@ The value of PRINTER_FRIENDLY determines if the Application Express engine is ru
 
 Table 3-34 PRINTER_FRIENDLY Syntax
 
-Reference Type	Syntax
-Direct PL/SQL
-
-APEX_APPLICATION.G_PRINTER_FRIENDLY (VARCHAR2 DATATYPE)
-
-PL/SQL
-
-V('PRINTER_FRIENDLY')
-
-Substitution string
-
-&PRINTER_FRIENDLY.
+Reference Type | Syntax
+:-- | :--
+Direct PL/SQL | ```APEX_APPLICATION.G_PRINTER_FRIENDLY (VARCHAR2 DATATYPE)```
+PL/SQL | ```V('PRINTER_FRIENDLY')```
+Substitution string | ```&PRINTER_FRIENDLY.```
 
 
 [^top](#0)
 <a id="36"></a>
 ### 36 PROXY_SERVER
 PROXY_SERVER is an application attribute. The attribute may be used by regions whose source comes from a URL. The following is the correct syntax for a direct PL/SQL reference used when you are writing PL/SQL to access remote web servers from within the database (for example, when using the utl_http package shipped with the database).
-
-CopyAPEX_APPLICATION.G_PROXY_SERVER
+```
+APEX_APPLICATION.G_PROXY_SERVER
+```
 
 
 [^top](#0)
@@ -727,22 +691,12 @@ PUBLIC_URL_PREFIX is an application-level attribute that identifies a URL to tog
 
 Table 3-35 PUBLIC_URL_PREFIX Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:PUBLIC_URL_PREFIX
-
-PL/SQL
-
-V('PUBLIC_URL_PREFIX')
-
-Substitution string
-
-&PUBLIC_URL_PREFIX.
-
-Template substitution
-
-#PUBLIC_URL_PREFIX#
+Reference Type | Syntax
+:-- | :-- 
+Bind variable | ```:PUBLIC_URL_PREFIX```
+PL/SQL | ```V('PUBLIC_URL_PREFIX')```
+Substitution string | ```&PUBLIC_URL_PREFIX.```
+Template substitution | ```#PUBLIC_URL_PREFIX#```
 
 
 [^top](#0)
@@ -754,26 +708,16 @@ REQUEST is typically referenced during Accept processing (that is, the processin
 
 Table 3-36 REQUEST Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:REQUEST
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_REQUEST
-
-PL/SQL
-
-V('REQUEST')
-
-Substitution string
-
-&REQUEST.
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:REQUEST```
+Direct PL/SQL | ```APEX_APPLICATION.G_REQUEST```
+PL/SQL | ```V('REQUEST')```
+Substitution string | ```&REQUEST.```
 
 See Also:
 
-"Using REQUEST"
+"[Using REQUEST](#39)"
 
 
 [^top](#0)
@@ -781,31 +725,32 @@ See Also:
 ### 39 Using REQUEST
 REQUEST is typically referenced during Accept processing (that is, the processing that occurs when you post a page). This section describes additional information about how to use the REQUEST substitution string.
 
-About Scope and Value of REQUEST for Posted Pages
-About the When Button Pressed Attribute
-About Referencing REQUEST Using Declarative Conditions
-About Using REQUEST for Show Processing
-About Using BRANCH_TO_PAGE_ACCEPT
+[About Scope and Value of REQUEST for Posted Pages](#391)
+[About the When Button Pressed Attribute](#392)
+[About Referencing REQUEST Using Declarative Conditions](#393)
+[About Using REQUEST for Show Processing](#394)
+[About Using BRANCH_TO_PAGE_ACCEPT](#395)
+
 See Also:
 
-"REQUEST"
+"[REQUEST](#38)"
 
-Parent topic: Using Built-in Substitution Strings
 
+<a id="391"></a>
 #### 39.1 About Scope and Value of REQUEST for Posted Pages
 When you post a page, you initiate Accept processing. Accept processing consists of computations, validations, processes, and branches. The value of REQUEST is available during each phase of the Accept processing. Once an application branches to a different page then REQUEST is set to NULL.
 
 The value of REQUEST is the name of the button the user clicks, or the name of the tab the user selects. For example, suppose you have a button with a name of CHANGE, and a label Apply Change. When a user clicks the button, the value of REQUEST is CHANGE.
 
-Parent topic: Using REQUEST
 
+<a id="392"></a>
 #### 39.2 About the When Button Pressed Attribute
 Validations, processes, and branches have a When Button Pressed attribute. This attribute displays as a select list and contains the names of buttons that exist on the current page. If you make a selection from When Button Pressed, you associate the button's REQUEST value with the validation, process, or branch.
 
 When you use a button to submit a page, the REQUEST value is passed to the page. The Accept processing logic evaluates each validation, process, and branch that uses a When Button Pressed attribute to determine whether the component should run (or fire). When one of these components runs, do not assume that a user actually clicked the associated button and caused the page to be submitted. Keep in mind, that another button using the same request value may have submitted the page. Similarly, JavaScript on the page can also submit the page and pass in a request value.
 
-Parent topic: Using REQUEST
 
+<a id="393"></a>
 #### 39.3 About Referencing REQUEST Using Declarative Conditions
 Many developers reference REQUEST using conditions. For example, you may want to reset pagination when a user clicks Go on a report page. You can reset pagination by creating an on-submit page process. The page process can be made conditional using the condition Request = Expression 1.
 
@@ -815,8 +760,8 @@ Under Condition, select the condition type Request = Expression 1.
 
 In Expression 1, enter GO.
 
-Parent topic: Using REQUEST
 
+<a id="394"></a>
 #### 39.4 About Using REQUEST for Show Processing
 You can also use REQUEST for Show processing when navigating to a page using f?p syntax. For example:
 
@@ -824,44 +769,43 @@ Copyf?p=100:1:&APP_SESSION.:GO
 Remember that the fourth argument in the f?p syntax is REQUEST. This example goes to application 100, page 1 for the current session, and sets the value of REQUEST to GO. Any process or region can reference the value of REQUEST using Show processing.
 
 The following is a similar example using PL/SQL:
-
-CopyIF V ('REQUEST') = 'GO' THEN
+```
+IF V ('REQUEST') = 'GO' THEN
    htp.p('hello');
 END IF;
+```
 Note that htp.p('hello') is a call to a PL/SQL Web Toolkit package to print the specified text string.
 
 See Also:
 
-Oracle Database Development Guide
+[Oracle Database Development Guide](https://docs.oracle.com/pls/topic/lookup?ctx=en/database/oracle/application-express/20.1/htmdb&id=ADFNS-GUID-B7C7170E-69AC-42D2-9597-451B1053209E)
 
-Parent topic: Using REQUEST
 
+<a id="395"></a>
 #### 39.5 About Using BRANCH_TO_PAGE_ACCEPT
 You can use a special request BRANCH_TO_PAGE_ACCEPT for Show processing to automatically submit the page. For example:
 
 Copyf?p=100:1:&APP_SESSION.:BRANCH_TO_PAGE_ACCEPT|SAVE:::P1_DATA:value
 Using BRANCH_TO_PAGE_ACCEPT is the same as navigating to page 1, entering a value into the item P1_DATA, and clicking a button that submits the page with a SAVE request.
 
-Parent topic: Using REQUEST
 
 [^top](#0)
 <a id="40"></a>
 ### 40 SCHEMA OWNER
 If you are generating calls to applications from within your PL/SQL code, you must reference the owner of the Oracle Application Express schema. The following describes the correct syntax for a direct PL/SQL reference:
-
-CopyAPEX_APPLICATION.G_FLOW_SCHEMA_OWNER
+```
+APEX_APPLICATION.G_FLOW_SCHEMA_OWNER
+```
 You may also use #FLOW_OWNER# to reference this value in SQL queries and PL/SQL (for example, in a region or a process).
-
-Parent topic: Using Built-in Substitution Strings
 
 
 [^top](#0)
 <a id="41"></a>
 ### 41 SQLERRM
 SQLERRM is a template substitution only available in the Applications Region Error Message. Supported syntax for a region template substitution reference:
-
-Copy#SQLERRM#
-Parent topic: Using Built-in Substitution Strings
+```
+#SQLERRM#
+```
 
 
 [^top](#0)
@@ -870,39 +814,34 @@ Parent topic: Using Built-in Substitution Strings
 SYSDATE_YYYYMMDD represents the current date on the database server, with the YYYYMMDD format mask applied. You may use this value instead of repeated calls to the SYSDATE() function. The following list describes the supported syntax for referencing SYSDATE_YYYYMMDD.
 
 Bind variable
-
-Copy:SYSDATE_YYYYMMDD
+```
+:SYSDATE_YYYYMMDD
+```
 PL/SQL
-
-CopyV('SYSDATE_YYYYMMDD')
+```
+V('SYSDATE_YYYYMMDD')
+```
 Direct PL/SQL
+```
+APEX_APPLICATION.G_SYSDATE (DATE DATATYPE)
+```
 
-CopyAPEX_APPLICATION.G_SYSDATE (DATE DATATYPE)
 Table 3-37 SYSDATE_YYYYMMDD Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:SYSDATE_YYYYMMDD
-
-Direct PL/SQL
-
-APEX_APPLICATION.G_SYSDATE (DATE DATATYPE)
-
-PL/SQL
-
-V('SYSDATE_YYYYMMDD')
-
-Parent topic: Using Built-in Substitution Strings
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:SYSDATE_YYYYMMDD```
+Direct PL/SQL | ```APEX_APPLICATION.G_SYSDATE (DATE DATATYPE)```
+PL/SQL | ```V('SYSDATE_YYYYMMDD')```
 
 
 [^top](#0)
 <a id="43"></a>
 ### 43 THEME_DB_IMAGES
 Use the THEME_DB_IMAGES substitution string to always reference files which are stored with your theme definition in the database, regardless of the File Prefix" setting of your theme. Supported syntax for a template substitution:
-
-Copy#THEME_DB_IMAGES#
-Parent topic: Using Built-in Substitution Strings
+```
+#THEME_DB_IMAGES#
+```
 
 
 [^top](#0)
