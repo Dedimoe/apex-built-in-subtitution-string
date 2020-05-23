@@ -447,37 +447,31 @@ APP_USER is the current user running the application. Depending upon your authen
 
 Table 3-24 APP_USER Syntax
 
-Reference Type	Syntax
-Bind variable
-
-:APP_USER
-
-PL/SQL
-
-V('APP_USER')
-
-Substitution string
-
-&APP_USER.
-
-SYS_CONTEXT variable
-
-SYS_CONTEXT('APEX$SESSION', 'APP_USER')
+Reference Type | Syntax
+:-- | :--
+Bind variable | ```:APP_USER```
+PL/SQL | ```V('APP_USER')```
+Substitution string | ```&APP_USER.```
+SYS_CONTEXT variable | ```SYS_CONTEXT('APEX$SESSION', 'APP_USER')```
 
 Consider the following examples:
 
 From within an HTML region:
-
-CopyHello you are logged in as &APP_USER.
+```
+Hello you are logged in as &APP_USER.
+```
 Using PL/SQL:
-
-Copyhtp.p('Hello you are logged in as'||V('APP_USER')); 
+```
+htp.p('Hello you are logged in as'||V('APP_USER')); 
+```
 As a bind variable:
-
-CopySELECT * FROM some_table WHERE user_id = :APP_USER
+```
+SELECT * FROM some_table WHERE user_id = :APP_USER
+```
 Using the SYS_CONTEXT variable:
-
-CopySELECT ... WHERE username = SYS_CONTEXT('APEX$SESSION', 'APP_USER')
+```
+SELECT ... WHERE username = SYS_CONTEXT('APEX$SESSION', 'APP_USER')
+```
 Oracle Application Express sets up the APEX$SESSION context when it starts to process an incoming request. For example, you can use the value of 'APP_USER' to access the current application user in queries and VPD (Virtual Private Database) security policies that protect your table data.
 
 See Also:
