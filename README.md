@@ -725,11 +725,11 @@ See Also:
 ### 39 Using REQUEST
 REQUEST is typically referenced during Accept processing (that is, the processing that occurs when you post a page). This section describes additional information about how to use the REQUEST substitution string.
 
-[About Scope and Value of REQUEST for Posted Pages](#391)
-[About the When Button Pressed Attribute](#392)
-[About Referencing REQUEST Using Declarative Conditions](#393)
-[About Using REQUEST for Show Processing](#394)
-[About Using BRANCH_TO_PAGE_ACCEPT](#395)
+- [About Scope and Value of REQUEST for Posted Pages](#391)
+- [About the When Button Pressed Attribute](#392)
+- [About Referencing REQUEST Using Declarative Conditions](#393)
+- [About Using REQUEST for Show Processing](#394)
+- [About Using BRANCH_TO_PAGE_ACCEPT](#395)
 
 See Also:
 
