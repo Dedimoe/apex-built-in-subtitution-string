@@ -1,5 +1,5 @@
 # apex-built-in-subtitution-string
-apex built in subtitution string
+apex built in subtitution string (oracle apex 20.1)
 
 <a id="0"></a>
 ### Using Built-in Substitution Strings
