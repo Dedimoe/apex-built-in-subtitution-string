@@ -898,8 +898,9 @@ Using PL/SQL:
 htp.p('Hello your workspace id is '||V('WORKSPACE_ID'));
 ```
 Using a bind variable:
-
-CopySELECT * FROM some_table WHERE workspace_id = :WORKSPACE_ID
+```
+SELECT * FROM some_table WHERE workspace_id = :WORKSPACE_ID
+```
 Using the SYS_CONTEXT variable:
 ```
 SELECT ... WHERE workspace_id = SYS_CONTEXT('APEX$SESSION', 'WORKSPACE_ID')
